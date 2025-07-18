@@ -1,0 +1,140 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 99%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Changed to navy blue - trust, reliability */
+    --primary: 220 87% 21%;
+    --primary-foreground: 210 33% 99%;
+
+    --secondary: 210 15% 75%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Changed to teal - efficiency, professionalism */
+    --accent: 180 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 220 87% 21%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 87% 21%;
+    --sidebar-foreground: 210 33% 99%;
+    --sidebar-primary: 180 100% 35%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 30% 25%;
+    --sidebar-accent-foreground: 210 33% 99%;
+    --sidebar-border: 215 30% 25%;
+    --sidebar-ring: 180 100% 35%;
+  }
+
+  .dark {
+    --background: 215 30% 15%;
+    --foreground: 210 33% 99%;
+
+    --card: 215 30% 18%;
+    --card-foreground: 210 33% 99%;
+
+    --popover: 215 30% 18%;
+    --popover-foreground: 210 33% 99%;
+
+    --primary: 210 33% 99%;
+    --primary-foreground: 215 30% 15%;
+
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 33% 99%;
+
+    --muted: 215 25% 27%;
+    --muted-foreground: 210 20% 80%;
+
+    --accent: 180 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 33% 99%;
+
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 180 100% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for IMOVA */
+@layer components {
+  .man-container {
+    @apply container px-4 mx-auto max-w-7xl;
+  }
+  
+  .man-btn-primary {
+    @apply bg-accent hover:bg-accent/90 text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+  
+  .man-btn-secondary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium px-4 py-2 rounded-md transition-colors;
+  }
+  
+  .man-card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-100;
+  }
+  
+  .man-input {
+    @apply rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary;
+  }
+  
+  .man-heading {
+    @apply text-primary font-bold;
+  }
+  
+  .man-subheading {
+    @apply text-man-gray font-semibold;
+  }
+
+  .man-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .man-badge-blue {
+    @apply man-badge bg-blue-100 text-primary;
+  }
+
+  .man-badge-orange {
+    @apply man-badge bg-teal-100 text-accent;
+  }
+
+  .man-badge-gray {
+    @apply man-badge bg-gray-100 text-man-gray;
+  }
+
+  .man-badge-green {
+    @apply man-badge bg-green-100 text-green-800;
+  }
+}
