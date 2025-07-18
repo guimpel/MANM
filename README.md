@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Sistema Imovan - Plataforma de Gestão Automotiva
 
@@ -265,3 +266,7 @@ Para dúvidas ou suporte:
 ---
 
 **Sistema Imovan** - Conectando o ecossistema automotivo brasileiro 🚗⚡
+=======
+# MANM
+PEIRO
+>>>>>>> c03ae7169599fbb223fa96c2645a8c317491912e
